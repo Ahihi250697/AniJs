@@ -1,0 +1,45 @@
+.fade {
+    opacity: 0;
+
+    &.animated {
+        animation-name: kf_fade;
+        -webkit-animation-name: kf_fade;
+    }
+}
+
+.fade_in_left {
+    opacity: 0;
+
+    &.animated {
+        animation-name: ani_fade_in_left;
+        -webkit-animation-name: ani_fade_in_left;
+    }
+}
+
+.fade_in_right {
+    opacity: 0;
+
+    &.animated {
+        animation-name: ani_fade_in_right;
+        -webkit-animation-name: ani_fade_in_right;
+    }
+}
+
+.fade_in,
+.fade_in_bottom {
+    opacity: 0;
+
+    &.animated {
+        animation-name: ani_fade_in_bottom;
+        -webkit-animation-name: ani_fade_in_bottom;
+    }
+}
+
+.fade_in_top {
+    opacity: 0;
+
+    &.animated {
+        animation-name: ani_fade_in_top;
+        -webkit-animation-name: ani_fade_in_top;
+    }
+}

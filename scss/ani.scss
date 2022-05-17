@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+.ani {
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 0.6s;
+    -webkit-animation-duration: 0.6s;
+}
+
+@import './base/animate';
+@import './components/fade';
+@import './components/img';
+@import './components/linebar';
+@import './components/wave';
+@import './components/zoom';

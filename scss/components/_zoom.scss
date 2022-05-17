@@ -1,0 +1,19 @@
+.zoom_in {
+    opacity: 0;
+    display: inline-block;
+
+    &.animated {
+        animation-name: ani_zoom_in;
+        -webkit-animation-name: ani_zoom_in;
+    }
+}
+
+.zoom_out {
+    opacity: 0;
+    display: inline-block;
+
+    &.animated {
+        animation-name: ani_zoom_out;
+        -webkit-animation-name: ani_zoom_out;
+    }
+}

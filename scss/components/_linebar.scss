@@ -1,0 +1,40 @@
+.linebar {
+    display: inline-block;
+    position: relative;
+
+    overflow: hidden;
+
+    &::after {
+        content: '';
+
+        width: 105%;
+        height: 105%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        background-color: #24b3dc;
+        transform-origin: center right;
+        transform: translate3d(-105%, 0, 0);
+        -webkit-transform: translate3d(-105%, 0, 0);
+    }
+
+    .linebar__inside {
+        opacity: 0;
+    }
+
+    &.animated {
+        .linebar__inside {
+            animation: ani_fade 0.3s linear 0.4s 1 both;
+        }
+    }
+
+    &.animated {
+        &::after {
+            animation: ani_linebar 0.8s ease-in-out 0s 1 both;
+            -webkit-animation: ani_linebar 0.8s ease-in-out 0s 1 both;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.img_slide {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+
+        top: 0;
+        left: 0;
+
+        // right: 0;
+        // bottom: 0;
+        width: 0;
+        height: 100%;
+
+        background-color: #24b3dc;
+
+        animation-duration: 1.6s;
+        -webkit-animation-duration: 1.6s;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+    }
+
+    >.img__content {
+        opacity: 0;
+    }
+
+    &.animated {
+
+        >.img__content {
+            animation: ani_fade 0.6s linear 1s 1 both;
+        }
+
+        &::after {
+            animation-name: ani_img_slide;
+            -webkit-animation-name: ani_img_slide;
+        }
+    }
+}
